@@ -12,7 +12,9 @@
 
 - platform：android/ios/web
 
-url：`http://v3.wufazhuce.com:8000/api/onelist/idlist/?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android` 或 `http://v3.wufazhuce.com:8000/api/onelist/idlist/?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+url：`http://v3.wufazhuce.com:8000/api/onelist/idlist/?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android` 
+或
+ `http://v3.wufazhuce.com:8000/api/onelist/idlist/?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
 
 json 示例：
 
@@ -413,7 +415,7 @@ json 示例：
 
 示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/1713/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
 
-<h2 id="assey_detail">Essay 详细信息</h2>
+<h2 id="essay_detail">Essay 详细信息</h2>
 
 内容信息 url：`http://v3.wufazhuce.com:8000/api/essay/ + item_id + ?channel=wdj&source=summary&source_id=9245&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
 
@@ -1058,9 +1060,9 @@ json 示例：
 	    ]
 	}
 
-json 解析：`data` 是一个链表，size 是10，我们需要使用该 json 字段中的 `item_id` 获取该音乐的[详细信息](#music_detail)
+json 解析：`data` 是一个链表，size 是10，我们需要使用该 json 字段中的 `item_id` 获取该音乐的[详细信息](#musics_detail)
 
-<h2 id="music_detail">音乐详细信息</h2>
+<h2 id="musics_detail">音乐详细信息</h2>
 
 内容信息 url：`http://v3.wufazhuce.com:8000/api/music/detail/ + item_id + ?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
 
