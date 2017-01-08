@@ -1284,7 +1284,7 @@ json 示例：
 
 示例：`http://v3.wufazhuce.com:8000/api/channel/movie/more/9029?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
 
-json 和最新 movielist 的 json 格式相同，故此处就不再放出了。
+json 和最新 movielist 的 json 格式相同，故此处就不再放出了
 
 # 获取特定日期的 one 信息 #
 
