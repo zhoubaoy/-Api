@@ -1217,7 +1217,7 @@ json 解析：`data` 是一个链表，size 是 10，我们需要使用该 json 
 - `item_id` 获取该影视的[详细信息](#movies_detail)
 - `id` 获取该影视之前的[前十个影视](#history_detail)
 
-<h2 id=""movies_detail>影视详细信息</h2>
+<h2 id="movies_detail">影视详细信息</h2>
 
 内容信息 url：`http://v3.wufazhuce.com:8000/api/movie/detail/ + item_id + ?channel=wdj&source=channel_movie&source_id=9240&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
 
@@ -1276,7 +1276,7 @@ json 示例：
 
 示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/movie/243/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
 
-<h2 id=""history_detail>历史影视信息</h2>
+<h2 id="history_detail">历史影视信息</h2>
 
 我们使用该 url 可以访问到历史影视，例如我将最新 movielist 中 `data` 中第十个元素的 `id` 传给下面的 url，那么就可以获取到第十个影视之前的前十个影视信息
 
