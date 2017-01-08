@@ -8,13 +8,13 @@
 
 - version：app 版本号
 
-- uuid：ffffffff-a90e-706a-63f7-ccf962cce3ff
+- uuid：个人设备 id，例：ffffffff-a90e-706a-63f7-ccf973aae5ee
 
 - platform：android/ios/web
 
-url：`http://v3.wufazhuce.com:8000/api/onelist/idlist/?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android` 
+url：`http://v3.wufazhuce.com:8000/api/onelist/idlist/?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android` 
 或
- `http://v3.wufazhuce.com:8000/api/onelist/idlist/?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+ `http://v3.wufazhuce.com:8000/api/onelist/idlist/?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
@@ -40,9 +40,9 @@ json 解析：json 字段中的 `data` 字段的每个值是将作为一个参�
 
 将上一个 json 中的 `data` 字段的值放入 url 中，并拼接好相应的参数
 
-url：`http://v3.wufazhuce.com:8000/api/onelist/ + 上面获取的data + /0?cchannel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+url：`http://v3.wufazhuce.com:8000/api/onelist/ + 上面获取的data + /0?cchannel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/onelist/3528/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/onelist/3528/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
@@ -345,9 +345,9 @@ json 解析：
 
 <h2 id="chinese_detail">一周语文详细信息</h2>
 
-内容信息 url：`http://v3.wufazhuce.com:8000/api/essay/ + item_id +?channel=wdj&source=summary&source_id=9261&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+内容信息 url：`http://v3.wufazhuce.com:8000/api/essay/ + item_id +?channel=wdj&source=summary&source_id=9261&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/essay/1713?channel=wdj&source=summary&source_id=9261&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/essay/1713?channel=wdj&source=summary&source_id=9261&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
@@ -411,15 +411,15 @@ json 示例：
 	    }
 	}
 
-评论信息 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+评论信息 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/1713/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/1713/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 <h2 id="essay_detail">Essay 详细信息</h2>
 
-内容信息 url：`http://v3.wufazhuce.com:8000/api/essay/ + item_id + ?channel=wdj&source=summary&source_id=9245&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+内容信息 url：`http://v3.wufazhuce.com:8000/api/essay/ + item_id + ?channel=wdj&source=summary&source_id=9245&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/essay/1701?channel=wdj&source=summary&source_id=9245&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/essay/1701?channel=wdj&source=summary&source_id=9245&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
@@ -483,15 +483,15 @@ json 示例：
 	    }
 	}
 
-评论 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+评论 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/1701/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/1701/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 <h2 id="music_detail">音乐详细信息</h2>
 
-内容信息 url：`http://v3.wufazhuce.com:8000/api/music/detail/ + item_id + ?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+内容信息 url：`http://v3.wufazhuce.com:8000/api/music/detail/ + item_id + ?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/music/detail/1182?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/music/detail/1182?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
@@ -568,15 +568,15 @@ json 示例：
 	    }
 	}
 
-评论 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/music/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+评论 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/music/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/music/1182/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/music/1182/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 <h2 id="movie_detail">影视详细信息</h2>
 
-内容信息 url：`http://v3.wufazhuce.com:8000/api/movie/ + item_id + /story/1/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+内容信息 url：`http://v3.wufazhuce.com:8000/api/movie/ + item_id + /story/1/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/movie/225/story/1/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/movie/225/story/1/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
@@ -629,9 +629,9 @@ json 示例：
 	    }
 	}
 
-图片 url：`http://v3.wufazhuce.com:8000/api/movie/detail/ + item_id + ?channel=wdj&source=summary&source_id=9095&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+图片 url：`http://v3.wufazhuce.com:8000/api/movie/detail/ + item_id + ?channel=wdj&source=summary&source_id=9095&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/movie/detail/225?channel=wdj&source=summary&source_id=9095&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/movie/detail/225?channel=wdj&source=summary&source_id=9095&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
@@ -684,14 +684,14 @@ json 示例：
 	    }
 	}
 
-评论 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/movie/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+评论 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/movie/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/movie/225/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/movie/225/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 # 阅读 #
 ## 获取最新 reading list ##
 
-url：`http://v3.wufazhuce.com:8000/api/channel/reading/more/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+url：`http://v3.wufazhuce.com:8000/api/channel/reading/more/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
@@ -829,9 +829,9 @@ json 解析：
 
 <h2 id="reading_detail">阅读详细信息</h2>
 
-内容信息 url：`http://v3.wufazhuce.com:8000/api/essay/ + item_id + ?channel=wdj&source=channel_reading&source_id=9264&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+内容信息 url：`http://v3.wufazhuce.com:8000/api/essay/ + item_id + ?channel=wdj&source=channel_reading&source_id=9264&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/essay/1715?channel=wdj&source=channel_reading&source_id=9264&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/essay/1715?channel=wdj&source=channel_reading&source_id=9264&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
@@ -895,15 +895,15 @@ json 示例：
 	    }
 	}
 
-评论 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+评论 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/1715/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/essay/1715/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 <h2 id="ask_detail">问答详细信息</h2>
 
-内容信息 url：`http://v3.wufazhuce.com:8000/api/question/ + item_id + ?channel=wdj&source=channel_reading&source_id=9254&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+内容信息 url：`http://v3.wufazhuce.com:8000/api/question/ + item_id + ?channel=wdj&source=channel_reading&source_id=9254&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/question/1593?channel=wdj&source=channel_reading&source_id=9254&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/question/1593?channel=wdj&source=channel_reading&source_id=9254&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
@@ -987,15 +987,15 @@ json 示例：
 	    }
 	}
 
-评论 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/question/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+评论 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/question/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/question/1593/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/question/1593/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 # 音乐 #
 
 ## 获取最新 musiclist ##
 
-url：`http://v3.wufazhuce.com:8000/api/channel/music/more/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+url：`http://v3.wufazhuce.com:8000/api/channel/music/more/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
@@ -1064,9 +1064,9 @@ json 解析：`data` 是一个链表，size 是10，我们需要使用该 json �
 
 <h2 id="musics_detail">音乐详细信息</h2>
 
-内容信息 url：`http://v3.wufazhuce.com:8000/api/music/detail/ + item_id + ?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+内容信息 url：`http://v3.wufazhuce.com:8000/api/music/detail/ + item_id + ?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/music/detail/1181?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/music/detail/1181?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
@@ -1143,13 +1143,13 @@ json 示例：
 	    }
 	}
 
-评论 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/music/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+评论 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/music/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/music/1181/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/music/1181/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 # 影视 #
 ## 获取最新 movielist ##
-url：`http://v3.wufazhuce.com:8000/api/channel/movie/more/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+url：`http://v3.wufazhuce.com:8000/api/channel/movie/more/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
@@ -1219,9 +1219,9 @@ json 解析：`data` 是一个链表，size 是 10，我们需要使用该 json 
 
 <h2 id="movies_detail">影视详细信息</h2>
 
-内容信息 url：`http://v3.wufazhuce.com:8000/api/movie/detail/ + item_id + ?channel=wdj&source=channel_movie&source_id=9240&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+内容信息 url：`http://v3.wufazhuce.com:8000/api/movie/detail/ + item_id + ?channel=wdj&source=channel_movie&source_id=9240&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/movie/detail/243?channel=wdj&source=channel_movie&source_id=9240&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/movie/detail/243?channel=wdj&source=channel_movie&source_id=9240&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
@@ -1272,38 +1272,38 @@ json 示例：
 	    }
 	}
 
-评论 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/movie/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+评论 url：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/movie/ + item_id + /0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/movie/243/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/comment/praiseandtime/movie/243/0?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 <h2 id="history_detail">历史影视信息</h2>
 
 我们使用该 url 可以访问到历史影视，例如我将最新 movielist 中 `data` 中第十个元素的 `id` 传给下面的 url，那么就可以获取到第十个影视之前的前十个影视信息
 
-内容信息 url：`http://v3.wufazhuce.com:8000/api/channel/movie/more/ + id + ?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+内容信息 url：`http://v3.wufazhuce.com:8000/api/channel/movie/more/ + id + ?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-示例：`http://v3.wufazhuce.com:8000/api/channel/movie/more/9029?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+示例：`http://v3.wufazhuce.com:8000/api/channel/movie/more/9029?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 和最新 movielist 的 json 格式相同，故此处就不再放出了
 
 # 获取特定日期的 one 信息 #
 
-首页：`http://v3.wufazhuce.com:8000/api/hp/bymonth/ + yyyy-MM-dd + %2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+首页：`http://v3.wufazhuce.com:8000/api/hp/bymonth/ + yyyy-MM-dd + %2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-例：`http://v3.wufazhuce.com:8000/api/hp/bymonth/2016-08-01%2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+例：`http://v3.wufazhuce.com:8000/api/hp/bymonth/2016-08-01%2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-Essay：`http://v3.wufazhuce.com:8000/api/essay/bymonth/ + yyyy-MM-dd + %2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+Essay：`http://v3.wufazhuce.com:8000/api/essay/bymonth/ + yyyy-MM-dd + %2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-例：`http://v3.wufazhuce.com:8000/api/essay/bymonth/2016-08-01%2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+例：`http://v3.wufazhuce.com:8000/api/essay/bymonth/2016-08-01%2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-连载：`http://v3.wufazhuce.com:8000/api/serialcontent/bymonth/ + yyyy-MM-dd + %2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+连载：`http://v3.wufazhuce.com:8000/api/serialcontent/bymonth/ + yyyy-MM-dd + %2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-例：`http://v3.wufazhuce.com:8000/api/serialcontent/bymonth/2016-08-01%2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+例：`http://v3.wufazhuce.com:8000/api/serialcontent/bymonth/2016-08-01%2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-问答：`http://v3.wufazhuce.com:8000/api/question/bymonth/ + yyyy-MM-dd + %2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+问答：`http://v3.wufazhuce.com:8000/api/question/bymonth/ + yyyy-MM-dd + %2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-例：`http://v3.wufazhuce.com:8000/api/question/bymonth/2016-08-01%2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+例：`http://v3.wufazhuce.com:8000/api/question/bymonth/2016-08-01%2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-音乐：`http://v3.wufazhuce.com:8000/api/music/bymonth/ + yyyy-MM-dd + %2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+音乐：`http://v3.wufazhuce.com:8000/api/music/bymonth/ + yyyy-MM-dd + %2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
-例：`http://v3.wufazhuce.com:8000/api/music/bymonth/2016-08-01%2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+例：`http://v3.wufazhuce.com:8000/api/music/bymonth/2016-08-01%2000:00:00?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
