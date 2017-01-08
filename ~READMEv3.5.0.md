@@ -1,10 +1,5 @@
 # 「一个」 API 接口 #
 ## 截止到 v3.5.0 ##
-
-![](http://i.imgur.com/uKa2aYZ.png)
-
-app 下载链接：[http://www.wandoujia.com/apps/one.hh.oneclient](http://www.wandoujia.com/apps/one.hh.oneclient)
-
 ## 图片 ##
 // 此 url 获取所有近期图片列表，返回 json 中的的数字作为参数传入后面的 url 中
 
