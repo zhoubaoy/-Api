@@ -4,13 +4,13 @@
 
 参数解析：
 
-- channel：wdj
+- channel：个人设备品牌，目前已知：`nexus6p`取值是 `wdj`，小米取值是 `mi`，还有莫名其妙的`update`
 
 - version：app 版本号
 
-- uuid：个人设备 id，例：ffffffff-a90e-706a-63f7-ccf973aae5ee
+- uuid：个人设备 id，例：ffffffff-a90e-706a-63f7-ccf973aae5ee **注意：前八位字符一定要相同**
 
-- platform：android/ios/web
+- platform：个人设备平台，目前已知：android/ios/web
 
 url：`http://v3.wufazhuce.com:8000/api/onelist/idlist/?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android` 
 或
@@ -1285,6 +1285,43 @@ json 示例：
 示例：`http://v3.wufazhuce.com:8000/api/channel/movie/more/9029?channel=wdj&version=4.0.2&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 和最新 movielist 的 json 格式相同，故此处就不再放出了
+
+# 点赞 #
+点赞是 `POST` 方式提交 json，同时在 url 后拼接指定参数
+
+首先介绍 `POST` 上去的 json，通俗的说它就是一个 bean 类，如下：
+
+| Key        | Value           | Type  |
+| ------------- |:-------------:| -----:|
+| itemid      | json 中的 item_id 或 content_id | int |
+| type      | hpcontent(图片)/essay(阅读)/question(问答)/music(音乐)      |   String |
+| deviceid | 略      |    String |
+| devicetype | android/ios/web      |    String |
+
+`图片`、`阅读`、`问答`、`音乐`的 json 如上，而如果是`电影`的话是另一种格式 —— 
+
+| Key        | Value           | Type  |
+| ------------- |:-------------:| -----:|
+| storyid      | json 中的 movie_story_id | int |
+| movieid      | json 中的 item_id 或 content_id      |   int |
+
+url 也是分为两种：
+
+>`图片`、`阅读`、`问答`、`音乐`访问的 url：
+
+>>示例 `http://v3.wufazhuce.com:8000/api/praise/add?channel=update&source_id=9598&source=summary&version=4.0.7&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+>
+>>说明：这里需要说明一下 `source_id` 是取自 json 中的 `id`，`source` 目前的取值只知道固定值 `summary`，其他参数就不需要说明了，取值方法和前面的相同
+
+>`电影`访问的 url:
+>>示例：`http://v3.wufazhuce.com:8000/api/movie/praisestory?channel=update&source_id=9665&source=summary&version=4.0.7&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+
+json 示例：
+
+	{
+		"msg": success,
+		"res": 0
+	}
 
 # 获取特定日期的 one 信息 #
 
