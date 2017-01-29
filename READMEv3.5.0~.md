@@ -1291,6 +1291,16 @@ json 和最新 movielist 的 json 格式相同，故此处就不再放出了
 
 首先介绍 `POST` 上去的 json，通俗的说它就是一个 bean 类，如下：
 
+如果是`评论`的话，则是以下的格式 ——
+
+| Key        | Value           | Type  |
+| ------------- |:-------------:| -----:|
+| itemid      | 该文章中的 item_id 或 content_id | int |
+| cmtid      | json 中的 id      |   int |
+| type      | question      |   String |
+
+`图片`、`阅读`、`问答`、`音乐`的 json 如下 ——
+
 | Key        | Value           | Type  |
 | ------------- |:-------------:| -----:|
 | itemid      | json 中的 item_id 或 content_id | int |
@@ -1298,23 +1308,27 @@ json 和最新 movielist 的 json 格式相同，故此处就不再放出了
 | deviceid | 略      |    String |
 | devicetype | android/ios/web      |    String |
 
-`图片`、`阅读`、`问答`、`音乐`的 json 如上，而如果是`电影`的话是另一种格式 —— 
+而如果是`电影`的话是另一种格式 —— 
 
 | Key        | Value           | Type  |
 | ------------- |:-------------:| -----:|
 | storyid      | json 中的 movie_story_id | int |
 | movieid      | json 中的 item_id 或 content_id      |   int |
 
-url 也是分为两种：
+url 是分为两种：
 
 >`图片`、`阅读`、`问答`、`音乐`访问的 url：
-
->>示例 `http://v3.wufazhuce.com:8000/api/praise/add?channel=update&source_id=9598&source=summary&version=4.0.7&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+>>示例 `http://v3.wufazhuce.com:8000/api/praise/add?channel=update&source_id=9598&source=summary&version=4.0.7&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 >
 >>说明：这里需要说明一下 `source_id` 是取自 json 中的 `id`，`source` 目前的取值只知道固定值 `summary`，其他参数就不需要说明了，取值方法和前面的相同
 
+>`评论`访问的 url:
+>>示例：`http://v3.wufazhuce.com:8000/api/comment/praise?channel=update&version=4.0.7&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
+>
+>>说明：就是比上面的 url 少了一个 `source` 参数
+
 >`电影`访问的 url:
->>示例：`http://v3.wufazhuce.com:8000/api/movie/praisestory?channel=update&source_id=9665&source=summary&version=4.0.7&uuid=ffffffff-a90e-706a-63f7-ccf962cce3ff&platform=android`
+>>示例：`http://v3.wufazhuce.com:8000/api/movie/praisestory?channel=update&source_id=9665&source=summary&version=4.0.7&uuid=ffffffff-a90e-706a-63f7-ccf973aae5ee&platform=android`
 
 json 示例：
 
