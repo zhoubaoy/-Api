@@ -1,3 +1,13 @@
+- [前言](#preface)
+- [正在售票](#sell_tickets)
+- [正在热映](#hot_movies)
+- [即将上映](#coming_movies)
+- [影片详情](#movie_detail)
+- [演职员表](#movie_roles)
+- [影片评论](#movie_comment)
+- [预告片&拍摄花絮](#trailer)
+- [剧照](#stage_photo)
+
 <h1 id="preface">前言</h1>
 因为电影的信息会根据地区的不同而不同，所以在 url 后面需要拼接地区 locationId，获取的方式有两种 ——
 
@@ -426,6 +436,179 @@ json 示例：
 
 - `videos`：预告片，不过我们无权访问
 
+<h2 id="movie_detail">影片详情</h2>
+
+url：`https://ticket-api-m.mtime.cn/movie/detail.api?locationId=?&movieId=?`
+
+解析：其中 `locationId` 就不做多解释了，`movieId` 可以分别从[正在售票](#sell_tickets)、[正在热映](#hot_movies)、[即将上映](#coming_movies)对应 json 的 `movieId`、`id`、`id` 字段中获取
+
+示例 url：[`https://ticket-api-m.mtime.cn/movie/detail.api?locationId=290&movieId=125805`](https://ticket-api-m.mtime.cn/movie/detail.api?locationId=290&movieId=125805)
+
+json 示例：
+
+	{
+	  "code": "1",
+	  "data": {
+	    "advertisement": {
+	      "advList": [
+	        {
+	          "advTag": "",
+	          "endDate": 1514649599,
+	          "isHorizontalScreen": false,
+	          "isOpenH5": false,
+	          "startDate": 1451577600,
+	          "tag": "西游伏妖篇（票务）",
+	          "type": "203",
+	          "typeName": "影片详情页banner2",
+	          "url": "https://static4da.mtime.cn/feature/mobile/banner/2017/0122/210.html"
+	        }
+	      ],
+	      "count": 1,
+	      "error": "",
+	      "success": true
+	    },
+	    "basic": {
+	      "actors": [
+	        {
+	          "actorId": 913378,
+	          "img": "http://img31.mtime.cn/ph/2014/09/01/170748.64755972_1280X720X2.jpg",
+	          "name": "范·迪塞尔",
+	          "nameEn": "Vin Diesel",
+	          "roleImg": "http://img5.mtime.cn/mg/2017/01/05/162613.85098094.jpg",
+	          "roleName": "Xander Cage"
+	        }
+	      ],
+	      "award": {
+	        "awardList": [],
+	        "totalNominateAward": 0,
+	        "totalWinAward": 0
+	      },
+	      "commentSpecial": "",
+	      "community": {},
+	      "director": {
+	        "directorId": 903521,
+	        "img": "http://img31.mtime.cn/ph/2016/09/02/144150.57291017_1280X720X2.jpg",
+	        "name": "D·J·卡卢索",
+	        "nameEn": "D.J. Caruso"
+	      },
+	      "festivals": [],
+	      "hotRanking": 5,
+	      "img": "http://img5.mtime.cn/mt/2017/01/05/105822.16893974_1280X720X2.jpg",
+	      "is3D": true,
+	      "isDMAX": true,
+	      "isEggHunt": false,
+	      "isFilter": false,
+	      "isIMAX": false,
+	      "isIMAX3D": true,
+	      "isTicket": true,
+	      "message": "该操作将清除您对该片的评分！是否确认？",
+	      "mins": "107分钟",
+	      "movieId": 125805,
+	      "name": "极限特工：终极回归",
+	      "nameEn": "xXx: The Return of Xander Cage",
+	      "overallRating": -1,
+	      "personCount": 123,
+	      "quizGame": {},
+	      "releaseArea": "中国",
+	      "releaseDate": "20170210",
+	      "showCinemaCount": 27,
+	      "showDay": 1486627200,
+	      "showtimeCount": 14,
+	      "stageImg": {
+	        "count": 124,
+	        "list": [
+	          {
+	            "imgId": 7180661,
+	            "imgUrl": "http://img31.mtime.cn/pi/2016/04/06/163644.66635601_1280X720X2.jpg"
+	          },
+	          {
+	            "imgId": 7301637,
+	            "imgUrl": "http://img5.mtime.cn/pi/2016/11/02/174909.42908242_1280X720X2.jpg"
+	          },
+	          {
+	            "imgId": 7203067,
+	            "imgUrl": "http://img31.mtime.cn/pi/2016/04/07/160807.83892239_1280X720X2.jpg"
+	          },
+	          {
+	            "imgId": 7301211,
+	            "imgUrl": "http://img5.mtime.cn/pi/2016/11/01/091327.68190533_1280X720X2.jpg"
+	          }
+	        ]
+	      },
+	      "story": "《极限特工3》将故事聚焦在由范·迪塞尔带头的的特工小队和以甄子丹为首的反派组织之间的对决。在这部作品中，迪塞尔饰演的特工凯奇不再是孤胆英雄，他将与一群出色的伙伴共同作战：塞缪尔·杰克逊饰演的国安局特工，印度女星迪皮卡·帕度柯妮饰演的与凯奇颇有渊源的女猎人，凭借《吸血鬼日记》走红的妮娜·杜波夫扮演的技术专家，《女子监狱》女星露比·罗丝饰演的狙击手，中国当红偶像演员吴亦凡饰演的特工Nicks。",
+	      "style": {
+	        "isLeadPage": 0,
+	        "leadImg": "https://img2.mtime.cn/mg/.jpg",
+	        "leadUrl": ""
+	      },
+	      "totalNominateAward": 0,
+	      "totalWinAward": 0,
+	      "type": [
+	        "动作",
+	        "冒险",
+	        "惊悚"
+	      ],
+	      "url": "https://movie.mtime.com/125805/",
+	      "video": {
+	        "count": 18,
+	        "hightUrl": "https://vfx.mtime.cn/Video/2017/01/05/mp4/170105105137886980.mp4",
+	        "img": "http://img5.mtime.cn/mg/2017/01/05/105124.57142324_235X132X4.jpg",
+	        "title": "极限特工：终极回归 中国版预告片",
+	        "url": "https://vfx.mtime.cn/Video/2017/01/05/mp4/170105105137886980_480.mp4",
+	        "videoId": 64107
+	      }
+	    },
+	    "boxOffice": {
+	      "movieId": 125805,
+	      "ranking": 41,
+	      "todayBox": 0,
+	      "todayBoxDes": "",
+	      "todayBoxDesUnit": "",
+	      "totalBox": 0,
+	      "totalBoxDes": "",
+	      "totalBoxUnit": ""
+	    },
+	    "live": {},
+	    "related": {
+	      "goodsCount": 0,
+	      "goodsList": [],
+	      "relateId": 0,
+	      "relatedUrl": "https://mall-wv.mtime.cn/#!/commerce/list/",
+	      "type": 0
+	    }
+	  },
+	  "msg": "成功",
+	  "showMsg": ""
+	}
+
+解析：其中`advertisement`、`related`是无关字段，不做解析
+
+- `basic`：具体内容
+- `actors`：演员信息
+- `actorId`：演员 id
+- `img`：演员照片
+- `name`：演员名
+- `nameEn`：演员英文名
+- `roleImg`：影片中饰演角色图片
+- `roleName`：影片中饰演角色名字
+- `award`：获得的奖项？
+- `commentSpecial`：一句话总结该电影
+- `community`：???
+- `director`：导演信息
+- `hotRanking`：热映排行榜
+- `img`：剧照
+- `releaseArea`：上映地区
+- `stageImg`：影片剧照
+- `story`：剧情简介
+- `video`：预告片
+- `boxOffice`：专业解读内容
+- `ranking`：票房排名
+- `todayBox`：今日实时票房量
+- `todayBoxDes` 和 `todayBoxDesUnit`：今日实时票房量
+- `totalBox` 和 `totalBoxUnit`：累计票房量
+
+ps：这里还有一些字段没有解析，由于采样不够大，所以笔者也无法判断部分字段含义
+
 <h2 id="movie_roles">演职员表</h2>
 
 url：`https://api-m.mtime.cn/Movie/MovieCreditsWithTypes.api?movieId=?`
@@ -607,179 +790,6 @@ json 示例：
 示例 url：[`https://ticket-api-m.mtime.cn/person/detail.api?personId=892908&cityId=290`](https://ticket-api-m.mtime.cn/person/detail.api?personId=892908&cityId=290)
 
 解析：就是上面获取到的人员 id 和你的地区 id 拼接上去就可以了，这里的内容挺多的，后期笔者再扩展
-
-<h2 id="movie_detail">影片详情</h2>
-
-url：`https://ticket-api-m.mtime.cn/movie/detail.api?locationId=?&movieId=?`
-
-解析：其中 `locationId` 就不做多解释了，`movieId` 可以分别从[正在售票](#sell_tickets)、[正在热映](#hot_movies)、[即将上映](#coming_movies)对应 json 的 `movieId`、`id`、`id` 字段中获取
-
-示例 url：[`https://ticket-api-m.mtime.cn/movie/detail.api?locationId=290&movieId=125805`](https://ticket-api-m.mtime.cn/movie/detail.api?locationId=290&movieId=125805)
-
-json 示例：
-
-	{
-	  "code": "1",
-	  "data": {
-	    "advertisement": {
-	      "advList": [
-	        {
-	          "advTag": "",
-	          "endDate": 1514649599,
-	          "isHorizontalScreen": false,
-	          "isOpenH5": false,
-	          "startDate": 1451577600,
-	          "tag": "西游伏妖篇（票务）",
-	          "type": "203",
-	          "typeName": "影片详情页banner2",
-	          "url": "https://static4da.mtime.cn/feature/mobile/banner/2017/0122/210.html"
-	        }
-	      ],
-	      "count": 1,
-	      "error": "",
-	      "success": true
-	    },
-	    "basic": {
-	      "actors": [
-	        {
-	          "actorId": 913378,
-	          "img": "http://img31.mtime.cn/ph/2014/09/01/170748.64755972_1280X720X2.jpg",
-	          "name": "范·迪塞尔",
-	          "nameEn": "Vin Diesel",
-	          "roleImg": "http://img5.mtime.cn/mg/2017/01/05/162613.85098094.jpg",
-	          "roleName": "Xander Cage"
-	        }
-	      ],
-	      "award": {
-	        "awardList": [],
-	        "totalNominateAward": 0,
-	        "totalWinAward": 0
-	      },
-	      "commentSpecial": "",
-	      "community": {},
-	      "director": {
-	        "directorId": 903521,
-	        "img": "http://img31.mtime.cn/ph/2016/09/02/144150.57291017_1280X720X2.jpg",
-	        "name": "D·J·卡卢索",
-	        "nameEn": "D.J. Caruso"
-	      },
-	      "festivals": [],
-	      "hotRanking": 5,
-	      "img": "http://img5.mtime.cn/mt/2017/01/05/105822.16893974_1280X720X2.jpg",
-	      "is3D": true,
-	      "isDMAX": true,
-	      "isEggHunt": false,
-	      "isFilter": false,
-	      "isIMAX": false,
-	      "isIMAX3D": true,
-	      "isTicket": true,
-	      "message": "该操作将清除您对该片的评分！是否确认？",
-	      "mins": "107分钟",
-	      "movieId": 125805,
-	      "name": "极限特工：终极回归",
-	      "nameEn": "xXx: The Return of Xander Cage",
-	      "overallRating": -1,
-	      "personCount": 123,
-	      "quizGame": {},
-	      "releaseArea": "中国",
-	      "releaseDate": "20170210",
-	      "showCinemaCount": 27,
-	      "showDay": 1486627200,
-	      "showtimeCount": 14,
-	      "stageImg": {
-	        "count": 124,
-	        "list": [
-	          {
-	            "imgId": 7180661,
-	            "imgUrl": "http://img31.mtime.cn/pi/2016/04/06/163644.66635601_1280X720X2.jpg"
-	          },
-	          {
-	            "imgId": 7301637,
-	            "imgUrl": "http://img5.mtime.cn/pi/2016/11/02/174909.42908242_1280X720X2.jpg"
-	          },
-	          {
-	            "imgId": 7203067,
-	            "imgUrl": "http://img31.mtime.cn/pi/2016/04/07/160807.83892239_1280X720X2.jpg"
-	          },
-	          {
-	            "imgId": 7301211,
-	            "imgUrl": "http://img5.mtime.cn/pi/2016/11/01/091327.68190533_1280X720X2.jpg"
-	          }
-	        ]
-	      },
-	      "story": "《极限特工3》将故事聚焦在由范·迪塞尔带头的的特工小队和以甄子丹为首的反派组织之间的对决。在这部作品中，迪塞尔饰演的特工凯奇不再是孤胆英雄，他将与一群出色的伙伴共同作战：塞缪尔·杰克逊饰演的国安局特工，印度女星迪皮卡·帕度柯妮饰演的与凯奇颇有渊源的女猎人，凭借《吸血鬼日记》走红的妮娜·杜波夫扮演的技术专家，《女子监狱》女星露比·罗丝饰演的狙击手，中国当红偶像演员吴亦凡饰演的特工Nicks。",
-	      "style": {
-	        "isLeadPage": 0,
-	        "leadImg": "https://img2.mtime.cn/mg/.jpg",
-	        "leadUrl": ""
-	      },
-	      "totalNominateAward": 0,
-	      "totalWinAward": 0,
-	      "type": [
-	        "动作",
-	        "冒险",
-	        "惊悚"
-	      ],
-	      "url": "https://movie.mtime.com/125805/",
-	      "video": {
-	        "count": 18,
-	        "hightUrl": "https://vfx.mtime.cn/Video/2017/01/05/mp4/170105105137886980.mp4",
-	        "img": "http://img5.mtime.cn/mg/2017/01/05/105124.57142324_235X132X4.jpg",
-	        "title": "极限特工：终极回归 中国版预告片",
-	        "url": "https://vfx.mtime.cn/Video/2017/01/05/mp4/170105105137886980_480.mp4",
-	        "videoId": 64107
-	      }
-	    },
-	    "boxOffice": {
-	      "movieId": 125805,
-	      "ranking": 41,
-	      "todayBox": 0,
-	      "todayBoxDes": "",
-	      "todayBoxDesUnit": "",
-	      "totalBox": 0,
-	      "totalBoxDes": "",
-	      "totalBoxUnit": ""
-	    },
-	    "live": {},
-	    "related": {
-	      "goodsCount": 0,
-	      "goodsList": [],
-	      "relateId": 0,
-	      "relatedUrl": "https://mall-wv.mtime.cn/#!/commerce/list/",
-	      "type": 0
-	    }
-	  },
-	  "msg": "成功",
-	  "showMsg": ""
-	}
-
-解析：其中`advertisement`、`related`是无关字段，不做解析
-
-- `basic`：具体内容
-- `actors`：演员信息
-- `actorId`：演员 id
-- `img`：演员照片
-- `name`：演员名
-- `nameEn`：演员英文名
-- `roleImg`：影片中饰演角色图片
-- `roleName`：影片中饰演角色名字
-- `award`：获得的奖项？
-- `commentSpecial`：一句话总结该电影
-- `community`：???
-- `director`：导演信息
-- `hotRanking`：热映排行榜
-- `img`：剧照
-- `releaseArea`：上映地区
-- `stageImg`：影片剧照
-- `story`：剧情简介
-- `video`：预告片
-- `boxOffice`：专业解读内容
-- `ranking`：票房排名
-- `todayBox`：今日实时票房量
-- `todayBoxDes` 和 `todayBoxDesUnit`：今日实时票房量
-- `totalBox` 和 `totalBoxUnit`：累计票房量
-
-ps：这里还有一些字段没有解析，由于采样不够大，所以笔者也无法判断部分字段含义
 
 <h2 id="movie_comment">影片评论</h2>
 
