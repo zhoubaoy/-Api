@@ -17,3 +17,7 @@ app 下载链接：[http://www.wandoujia.com/apps/com.mtime](http://www.wandouji
 ## [12306：API 链接](https://github.com/jokermonn/-Api/blob/master/12306.md) ##
 
 12306 网站链接：[http://www.12306.cn/mormhweb/](http://www.12306.cn/mormhweb/)
+
+## [途牛火车票：API链接](https://github.com/jokermonn/-Api/blob/master/TuniuTickets.md) ##
+
+途牛火车票网链接：[http://huoche.tuniu.com/](http://huoche.tuniu.com/)
