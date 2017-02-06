@@ -10,13 +10,13 @@ url： `http://huoche.tuniu.com/station_1708_2500`
 
 - `primary[departureDate]`：发车日期，`yyyy-MM-dd` 格式，例如：`2017-02-06`
 
-- `primary[departureCityCode]`：出发站码，请参考途牛站码 json
+- `primary[departureCityCode]`：出发站码，请参考[途牛站码 json](https://github.com/jokermonn/-Api/blob/master/tuniu.md)
 
-- `primary[departureCityName]`：出发站名，请参考途牛站码 json
+- `primary[departureCityName]`：出发站名，请参考[途牛站码 json](https://github.com/jokermonn/-Api/blob/master/tuniu.md)
 
-- `primary[arrivalCityCode]`：到达站码，请参考途牛站码 json
+- `primary[arrivalCityCode]`：到达站码，请参考[途牛站码 json](https://github.com/jokermonn/-Api/blob/master/tuniu.md)
 
-- `primary[arrivalCityName]`：到达站名，请参考途牛站码 json
+- `primary[arrivalCityName]`：到达站名，请参考[途牛站码 json](https://github.com/jokermonn/-Api/blob/master/tuniu.md)
 
 - `start`：起始值，默认 `0`
 
@@ -590,7 +590,7 @@ json 示例：
 - `destArriveTime`：到达时间
 - `duration`：历时（以分钟为单位）
 - `price`：座位价格信息
-- `leftNumber`：剩余票量
+- `leftNumber`：剩余票量（`99`是表示票量充足）
 - `seatStatus`：`有`或为空，票量充足情况下为`有`，反之为空
 - `stuPrice`：学生价，但是途牛网好像一直获取为 `null`
 - `resId`：座位对应 id
