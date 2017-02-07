@@ -21,3 +21,11 @@ app 下载链接：[http://www.wandoujia.com/apps/com.mtime](http://www.wandouji
 ## [途牛火车票：API链接](https://github.com/jokermonn/-Api/blob/master/TuniuTickets.md) ##
 
 途牛火车票网链接：[http://huoche.tuniu.com/](http://huoche.tuniu.com/)
+
+## [快递100：API 链接](https://github.com/jokermonn/-Api/blob/master/ExpressDelivery100.md) ##
+
+快递100网链接：[https://www.kuaidi100.com/](https://www.kuaidi100.com/)
+
+## [快递网：API 链接](https://github.com/jokermonn/-Api/blob/master/ExpressDelivery.md) ##
+
+快递网链接：[http://www.kuaidi.com/](http://www.kuaidi.com/)
