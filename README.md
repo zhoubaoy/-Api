@@ -27,6 +27,12 @@ app 下载链接：[http://www.wandoujia.com/apps/com.youdao.dict](http://www.wa
 
 app 下载链接：[http://www.wandoujia.com/apps/bingdic.android.activity](http://www.wandoujia.com/apps/bingdic.android.activity)
 
+## [每日一文：API 链接](https://github.com/jokermonn/-Api/blob/master/OneArticle.md) ##
+
+![](http://img.wdjimg.com/mms/icon/v1/5/81/865635b34f2a7d3d3b5bb7a368cb2815_78_78.png)
+
+app 下载链接：[http://www.wandoujia.com/apps/com.meiriyiwen.app](http://www.wandoujia.com/apps/com.meiriyiwen.app)
+
 ## [快递100：API 链接](https://github.com/jokermonn/-Api/blob/master/ExpressDelivery100.md) ##
 
 快递100网链接：[https://www.kuaidi100.com/](https://www.kuaidi100.com/)
