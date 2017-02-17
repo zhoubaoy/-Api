@@ -1027,8 +1027,8 @@ json 示例：
 - `simple`
 	- `query`：查询单词
 	- `word`
-		- `usphone`：美式发音
-		- `ukphone`：英式发音
+		- `usphone`：美式音标
+		- `ukphone`：英式音标
 
 - `ec`
 	- `word`
@@ -1045,15 +1045,83 @@ json 示例：
 - `longman`：朗文当代高级英语辞典内容
 	- `wordList`：释义列表
 		- `HOMNUM`：
-		- `FREQ`：频率，`S1`
-		- ``：
-		- ``：
-		- ``：
-- ``：
-- ``：
-- ``：
-- ``：
-- ``：
+			- `Entry`
+				- `Head`(固有字段)
+					- `FREQ`：频率，取值：`S1`为口语中最常用1000词，`W1`为书面英语中最常用的1000词等
+					- `VIDEOCAL`：英式发音
+					- `PronCodes`：音标
+						- `PRONKK`：英式音标
+						- `PRON`：美式音标
+					- `POS`：词性
+				- `PhrVbEntry`(非固有字段)：短语动词
+					- `EXAMPLETRAN`：例句翻译
+						- `DEF`：详细英文释义
+						- `TRAN`：详细英文释义翻译
+						- `EXAMPLE`：例句
+						- `SYN`：同义词
+						- `Head`
+						- `POS`:词性
+				- `Sense` 
+					- `EXAMPLETRAN`：例句翻译
+					- `DEF`：详细英文释义
+					- `TRAN`：详细英文释义翻译
+					- `SIGNTRAN`：翻译
+					- `EXAMPLE`：例句
+					- `GramExa`：语法扩展
+						- `PROPFORMPREP`：与某词扩展
+						- `EXAMPLE`：例句
+						- `EXAMPLETRAN`：例句释义
+						- `COLLOTRAN`：短词释义
+						- ...					
+				- ......
+- `web_trans`：网络释义
+	- `web-translation`
+		- `trans`：扩展词组翻译列表
+			- `summary`
+				- `line`：例句
+			- `support`：基于多少个网页
+			- `value`：翻译
+		- `key-speech`：扩展词组拼接
+		- `key`：扩展词组
+	
+- `pic_dict`：图片词典
+	- `pic`：图片信息
+		- `host`：
+		- `img`：图片地址
+		- `url`：链接
+- `collins`：柯林斯英汉双解大辞典
+	- `collins_entries`
+		- `phonetic`：音标
+		- `star`：星数
+		- `pos_entry`：词性信息
+			- `pos_tips`：词性翻译
+			- `pos`：词性
+		- `tran`：例句
+- `ec21`：21世纪大英汉词典
+	- `word`
+		- `phrs`
+			- `i`：短语列表
+				- `des` 或 `tr`：描述
+					- `l`
+						- `i`：短语翻译
+				- `phr`：
+					- `l`
+						- `i`：短语
+		- `trs`：
+			- `l`
+				- `i`：释义 
+			- `pos`：词性
+		- `phone`：音标
+- `ee`：英英释义
+	- `word`
+		- `trs`：翻译列表
+			- `tr`
+				- `similar-words`：近义词列表
+					- `similar`：近义词
+				- `l`
+					- `i`：例句
+			- `pos`：词性
+	- `phone`：
 - ``：
 - ``：
 - ``：
