@@ -21,6 +21,12 @@ app 下载链接：[http://www.wandoujia.com/apps/com.mtime](http://www.wandouji
 
 app 下载链接：[http://www.wandoujia.com/apps/com.youdao.dict](http://www.wandoujia.com/apps/com.youdao.dict)
 
+## [微软必应词典：API 链接](https://github.com/jokermonn/-Api/blob/master/BingDic.md) ##
+
+![](http://img.wdjimg.com/mms/icon/v1/b/04/53110268118ae536fcf87ec91353904b_78_78.png)
+
+app 下载链接：[http://www.wandoujia.com/apps/bingdic.android.activity](http://www.wandoujia.com/apps/bingdic.android.activity)
+
 ## [快递100：API 链接](https://github.com/jokermonn/-Api/blob/master/ExpressDelivery100.md) ##
 
 快递100网链接：[https://www.kuaidi100.com/](https://www.kuaidi100.com/)
