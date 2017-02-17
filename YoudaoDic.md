@@ -22,6 +22,115 @@ url 示例：[`http://dict.youdao.com/suggest?q=a&le=eng&num=15&ver=2.0&doctype=
 
 json 示例：
 
+	{
+	  "result": {
+	    "code": 200,
+	    "msg": "success"
+	  },
+	  "data": {
+	    "query": "a",
+	    "entries": [
+	      {
+	        "explain": "art. 一; 任一; 每一",
+	        "entry": "a"
+	      },
+	      {
+	        "explain": "n. 账户; 解释; 账目，账单; 理由; vi. 解释; 导致; 报账; vt. 认为; 把…视为",
+	        "entry": "account"
+	      },
+	      {
+	        "explain": "adj. 有效的，可得的; 可利用的; 空闲的",
+	        "entry": "available"
+	      },
+	      {
+	        "explain": "vt. 欣赏; 感激; 领会; 鉴别; vi. 增值; 涨价",
+	        "entry": "appreciate"
+	      },
+	      {
+	        "explain": "vt. 使用; 存取; 接近; n. 进入; 使用权; 通路",
+	        "entry": "access"
+	      },
+	      {
+	        "explain": "vt. 承担; 假定; 采取; 呈现; vi. 装腔作势; 多管闲事",
+	        "entry": "assume"
+	      },
+	      {
+	        "explain": "adj. 适当的; vt. 占用; 拨出",
+	        "entry": "appropriate"
+	      },
+	      {
+	        "explain": "vt. 演说; 从事; 忙于; 写姓名地址; n. 地址; 演讲; 致辞; 说话的技巧",
+	        "entry": "address"
+	      },
+	      {
+	        "explain": "n. 方法; 途径; 接近; vt. 接近; 着手处理; vi. 靠近",
+	        "entry": "approach"
+	      },
+	      {
+	        "explain": "adj. 供选择的; 选择性的; 交替的; n. 二中择一; 供替代的选择",
+	        "entry": "alternative"
+	      },
+	      {
+	        "explain": "n. 发展; 前进; 增长; 预付款; vt. 提出; 预付; 使……前进; 将……提前; vi. ...",
+	        "entry": "advance"
+	      },
+	      {
+	        "explain": "vi. 交往; 结交; n. 同事，伙伴; 关联的事物; vt. 联想; 使联合; 使发生联系; a...",
+	        "entry": "associate"
+	      },
+	      {
+	        "explain": "vt. 申请; 涂，敷; 应用; vi. 申请; 涂，敷; 适用; 请求",
+	        "entry": "apply"
+	      },
+	      {
+	        "explain": "vt. 影响; 感染; 感动; 假装; vi. 倾向; 喜欢; n. 情感; 引起感情的因素",
+	        "entry": "affect"
+	      },
+	      {
+	        "explain": "n. 属性; 特质; vt. 归属; 把…归于",
+	        "entry": "attribute"
+	      },
+	      {
+	        "explain": "adj. 学术的; 理论的; 学院的; n. 大学生，大学教师; 学者",
+	        "entry": "academic"
+	      },
+	      {
+	        "explain": "vt. 提倡，主张，拥护; n. 提倡者; 支持者; 律师",
+	        "entry": "advocate"
+	      },
+	      {
+	        "explain": "vi. 呼吁，恳求; 上诉; 诉诸，求助; 有吸引力，迎合爱好; n. 呼吁，请求; 吸引力，感染力...",
+	        "entry": "appeal"
+	      },
+	      {
+	        "explain": "conj. 因为; 随着; 虽然; 依照; prep. 如同; 当作; 以…的身份; adv. 同样...",
+	        "entry": "as"
+	      },
+	      {
+	        "explain": "n. 应用; 申请; 应用程序; 敷用",
+	        "entry": "application"
+	      },
+	      {
+	        "explain": "n. 权威; 权力; 当局",
+	        "entry": "authority"
+	      }
+	    ],
+	    "language": "eng"
+	  }
+	}
+
+解析：
+
+- `result`：返回结果信息
+	- `code`：`200`为成功
+	- `message`：成功时为 `success`，若错误，则是相应错误信息
+- `data`：具体内容列表
+	- `query`：联想字母
+	- `entries`
+		- `explain`：联想单词翻译
+		- `entry`：联想单词
+- `language`：`eng`
+
 <h2 id="explain">释义</h2>
 
 url：`http://dict.youdao.com/jsonapi`
@@ -1121,14 +1230,52 @@ json 示例：
 				- `l`
 					- `i`：例句
 			- `pos`：词性
-	- `phone`：
-- ``：
-- ``：
-- ``：
-- ``：
-	- ``：
-	- ``：
-	- ``：
-	- ``：
-	- ``：
-	- ``：
+	- `phone`：音标
+- `rel_word: `：同根词
+	- `rels`：同根词列表
+		- `rel`
+			- `words`
+				- `word`：词根
+				- `tran`：词根翻译
+			- `pos`：词性
+- `phrs`：词组短语
+	- `phrs`：词组短语列表
+		- `phr`
+			- `trs`
+				- `tr`
+					- `l`
+						- `i`：词组短语翻译
+			- `headword`
+				- `l`
+					- `i`：词组短语
+- `syno`：同近义词
+	- `synos`：同近义词列表
+		- `syno`
+			- `tran`：同近义词翻译
+			- `ws`：同近义词列表
+				- `w`：同近义词
+			- `pos`：词性
+- `blng_sents_part`：双语例句
+	- `sentence-pair`
+		- `sentence-eng` 和 `sentence`：例句
+		- `sentence-translation`：例句翻译
+- `auth_sents_part`：权威例句
+	- `sent`：
+		- `foreign`：例句
+		- `source`：来源
+- `media_sents_part`：原声例句
+	- `sent`
+		- `eng`：例句
+		- `snippets`
+			- `snippet`
+				- `source`：来源
+				- `name`：来源文章名
+				- `win8` 和 `streamUrl`：例句朗读地址
+				- `duration`：例句朗读时长
+		- `speech-size`：例句朗读 mp3 大小
+- `wikipedia_digest`：百科
+	- `source`
+		- `url`：链接
+	- `summarys`
+		- `summary`：百科内容
+		- `key`：关键词
