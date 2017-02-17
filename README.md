@@ -15,7 +15,7 @@ app 下载链接：[http://www.wandoujia.com/apps/one.hh.oneclient](http://www.w
 
 app 下载链接：[http://www.wandoujia.com/apps/com.mtime](http://www.wandoujia.com/apps/com.mtime)
 
-## [有道词典：API 链接](https://github.com/jokermonn/-Api/blob/master/TuniuTickets.md) ##
+## [有道词典：API 链接](https://github.com/jokermonn/-Api/blob/master/YoudaoDic.md) ##
 
 ![](http://img.wdjimg.com/mms/icon/v1/0/82/8f4c1ccdc0a96b9c44a5c94709a77820_78_78.png)
 
