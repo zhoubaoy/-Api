@@ -33,6 +33,12 @@ app 下载链接：[http://www.wandoujia.com/apps/bingdic.android.activity](http
 
 app 下载链接：[http://www.wandoujia.com/apps/com.douban.movie](http://www.wandoujia.com/apps/com.douban.movie)
 
+## [魅族天气：API 链接](https://github.com/jokermonn/-Api/blob/master/MeizuWeather.md) ##
+
+![](http://pic.paopaoche.net/up/2015-9/20159191024.png)
+
+app 下载链接：[http://www.paopaoche.net/android/97297.html](http://www.paopaoche.net/android/97297.html)
+
 ## [每日一文：API 链接](https://github.com/jokermonn/-Api/blob/master/OneArticle.md) ##
 
 ![](http://img.wdjimg.com/mms/icon/v1/5/81/865635b34f2a7d3d3b5bb7a368cb2815_78_78.png)
