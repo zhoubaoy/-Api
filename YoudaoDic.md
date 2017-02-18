@@ -1283,3 +1283,55 @@ json 示例：
 	- `summarys`
 		- `summary`：百科内容
 		- `key`：关键词
+
+<h2 id="translation">翻译</h2>
+
+url：http://fanyi.youdao.com/translate
+
+请求方式：`POST`
+
+请求体：i
+
+请求格式：`x-www-form-urlencoded`
+
+拼接参数：
+
+- `doctype`：`json` 或 `xml`
+- `jsonversion`：如果 `doctype` 值是 `xml`，则去除该值，若 `doctype` 值是 `json`，该值为空即可
+- `xmlVersion`：如果 `doctype` 值是 `json`，则去除该值，若 `doctype` 值是 `xml`，该值为空即可
+- `type`：语言自动检测时为 `null`，为 `null` 时可为空。`英译中`为 `EN2ZH_CN`，`中译英`为 `ZH_CN2EN`，`日译中`为 `JA2ZH_CN`，`中译日`为 `ZH_CN2JA`，`韩译中`为 `KR2ZH_CN`，`中译韩`为 `ZH_CN2KR`，`中译法`为 `ZH_CN2FR`，`法译中`为 `FR2ZH_CN`
+- `keyform`：略，同[联想](#associate)
+- `model`：略，同[联想](#associate)
+- `mid`：略，同[联想](#associate)
+- `imei`：略，同[联想](#associate)
+- `vendor`：略，同[联想](#associate)
+- `screen`：略，同[联想](#associate)
+- `ssid`：略，同[联想](#associate)
+- `network`：略，同[释义](#explain)
+- `abtest`：略，同[联想](#associate)
+
+url 示例：[`http://fanyi.youdao.com/translate?doctype=json&jsonversion=&type=&keyfrom=&model=&mid=&imei=&vendor=&screen=&ssid=&network=&abtest=`](doctype=json&jsonversion=&type=&keyfrom=&model=&mid=&imei=&vendor=&screen=&ssid=null&network=&abtest=)
+
+json 示例：
+
+	{
+	  "type": "EN2ZH_CN",
+	  "errorCode": 0,
+	  "elapsedTime": 0,
+	  "translateResult": [
+	    [
+	      {
+	        "src": "merry me",
+	        "tgt": "我快乐"
+	      }
+	    ]
+	  ]
+	}
+
+解析：
+
+- `type`：翻译类型。`2`之前的表示原文类型，`2`之后表示译文类型。ps：`2` 表示 `to`
+- `errorCode`：`0`表示成功
+- `translateResult`：疑问结果
+	- `src`：原文
+	- `tgt`：译文
