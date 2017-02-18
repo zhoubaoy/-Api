@@ -27,6 +27,12 @@ app 下载链接：[http://www.wandoujia.com/apps/com.youdao.dict](http://www.wa
 
 app 下载链接：[http://www.wandoujia.com/apps/bingdic.android.activity](http://www.wandoujia.com/apps/bingdic.android.activity)
 
+## [豆瓣电影：API 链接](https://github.com/jokermonn/-Api/blob/master/DoubanMovie.md) ##
+
+![](http://img.wdjimg.com/mms/icon/v1/9/f4/e2fed53a563d696d990484de34729f49_78_78.png)
+
+app 下载链接：[http://www.wandoujia.com/apps/com.douban.movie](http://www.wandoujia.com/apps/com.douban.movie)
+
 ## [每日一文：API 链接](https://github.com/jokermonn/-Api/blob/master/OneArticle.md) ##
 
 ![](http://img.wdjimg.com/mms/icon/v1/5/81/865635b34f2a7d3d3b5bb7a368cb2815_78_78.png)
