@@ -1,3 +1,7 @@
+- [每日一文](#article)
+- [特定某天一文](#someday)
+- [随机一文](#random)
+
 <h2 id="article">每日一文</h2>
 
 url：[`https://interface.meiriyiwen.com/article/today?dev=1`](https://interface.meiriyiwen.com/article/today?dev=1)
