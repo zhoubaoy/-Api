@@ -35,7 +35,7 @@ app 下载链接：[http://www.wandoujia.com/apps/com.douban.movie](http://www.w
 
 ## [魅族天气：API 链接](https://github.com/jokermonn/-Api/blob/master/MeizuWeather.md) ##
 
-![](http://pic.paopaoche.net/up/2015-9/20159191024.png)
+![](http://p1.bpimg.com/4851/4fe7a2df33d616b0.png)
 
 app 下载链接：[http://www.paopaoche.net/android/97297.html](http://www.paopaoche.net/android/97297.html)
 
