@@ -33,6 +33,12 @@ app 下载链接：[http://www.wandoujia.com/apps/bingdic.android.activity](http
 
 app 下载链接：[http://www.wandoujia.com/apps/com.douban.movie](http://www.wandoujia.com/apps/com.douban.movie)
 
+## [中央天气预报：API 链接](https://github.com/jokermonn/-Api/blob/master/CenterWeatherCityCode.md) ##
+
+![](http://img.wdjimg.com/mms/icon/v1/5/22/05be4e3dc6e4beaf4be0c1249c176225_78_78.png)
+
+app 下载链接：[http://www.wandoujia.com/apps/com.nineton.weatherforecast](http://www.wandoujia.com/apps/com.nineton.weatherforecast)
+
 ## [魅族天气：API 链接](https://github.com/jokermonn/-Api/blob/master/MeizuWeather.md) ##
 
 ![](http://p1.bpimg.com/4851/4fe7a2df33d616b0.png)
