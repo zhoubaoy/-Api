@@ -33,7 +33,7 @@ app 下载链接：[http://www.wandoujia.com/apps/bingdic.android.activity](http
 
 app 下载链接：[http://www.wandoujia.com/apps/com.douban.movie](http://www.wandoujia.com/apps/com.douban.movie)
 
-## [中央天气预报：API 链接](https://github.com/jokermonn/-Api/blob/master/CenterWeatherCityCode.md) ##
+## [中央天气预报：API 链接](https://github.com/jokermonn/-Api/blob/master/CenterWeather.md) ##
 
 ![](http://img.wdjimg.com/mms/icon/v1/5/22/05be4e3dc6e4beaf4be0c1249c176225_78_78.png)
 
