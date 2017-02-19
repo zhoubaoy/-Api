@@ -255,6 +255,7 @@ url：http://tj.nineton.cn/Heart/index/future24h/
 
 拼接参数：
 
+- `city`：略，同[天气](#weather)
 - `language`：略，同[天气](#weather)
 - `key`：略，同[天气](#weather)
 
