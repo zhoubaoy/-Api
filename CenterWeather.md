@@ -1,7 +1,7 @@
-- [天气](#weather)
-- [天气细节](#weather_details)
+- [中央天气预报](#weather)
+- [中央天气预报细节](#weather_details)
 
-<h2 id="weather">天气</h2>
+<h2 id="weather">中央天气预报</h2>
 
 url：http://tj.nineton.cn/Heart/index/all
 
@@ -249,15 +249,15 @@ json 示例：
 		- `cop`：???
 		- `wind`：风力信息
 
-<h2 id="weather_details">天气细节</h2>
+<h2 id="weather_details">中央天气预报</h2>
 
 url：http://tj.nineton.cn/Heart/index/future24h/
 
 拼接参数：
 
-- `city`：略，同[天气](#weather)
-- `language`：略，同[天气](#weather)
-- `key`：略，同[天气](#weather)
+- `city`：略，同[中央天气预报](#weather)
+- `language`：略，同[中央天气预报](#weather)
+- `key`：略，同[中央天气预报](#weather)
 
 url 示例：[`http://tj.nineton.cn/Heart/index/future24h/?city=CHSH000000&language=zh-chs&key=36bdd59658111bc23ff2bf9aaf6e345c`](http://tj.nineton.cn/Heart/index/future24h/?city=CHSH000000&language=zh-chs&key=36bdd59658111bc23ff2bf9aaf6e345c) 或 [`http://tj.nineton.cn/Heart/index/future24h/?city=CHSH000000&language=&key=`](http://tj.nineton.cn/Heart/index/future24h/?city=CHSH000000&language=&key=) 或 [`http://tj.nineton.cn/Heart/index/future24h/?city=CHSH000000`](http://tj.nineton.cn/Heart/index/future24h/?city=CHSH000000)
 
