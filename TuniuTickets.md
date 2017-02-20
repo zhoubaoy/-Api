@@ -1,4 +1,4 @@
-## 火车票查询 ##
+## 途牛火车票查询 ##
 
 url： `http://huoche.tuniu.com/station_1708_2500`
 
