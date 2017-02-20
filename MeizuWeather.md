@@ -1,6 +1,6 @@
 请求参数中需要使用到城市 id，分为两种：一种是市级城市，[戳我查看 json](https://github.com/jokermonn/-Api/blob/master/Meizu_cities.json)；一种是县级城市，[戳我查看 json](https://github.com/jokermonn/-Api/blob/master/Meizu_city.json)
 
-<h2 id="weather">天气</h2>
+<h2 id="weather">魅族天气</h2>
 
 url：http://aider.meizu.com/app/weather/listWeather?cityIds= + 城市 id
 
