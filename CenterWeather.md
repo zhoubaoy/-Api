@@ -9,7 +9,7 @@ url：http://tj.nineton.cn/Heart/index/all
 
 - `city`：城市码，查看数据库文件中的 `townId`，[戳我查看数据库文件](https://github.com/jokermonn/-Api/blob/master/CenterWeatherCityCode.db)，另外我也转换了一份 json 文件，也是同样可以的，[戳我查看](https://github.com/jokermonn/-Api/blob/master/CenterWeatherCityCode.json)
 - `language`：固定值 `zh-chs`
-- `unit`：固定值 `c`。可不填。也可省略该参数
+- `unit`：温度单位固定值 `c`。可不填。也可省略该参数
 - `aqi`：固定值 `city`。可不填。也可省略该参数
 - `alarm`：固定值 `1`。可不填。也可省略该参数
 - `key`：秘钥，固定值 `78928e706123c1a8f1766f062bc8676b`。可不填。也可省略该参数
