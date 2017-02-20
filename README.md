@@ -1,5 +1,5 @@
 # 声明 #
-以下所有 API 均由产品公司自身提供，本人皆从网络获取。获取与共享之行为或有侵犯产品权益的嫌疑。若被告知需停止共享与使用，本人会及时删除此页面与整个项目。请您暸解相关情况，并遵守产品协议。
+**以下所有 API 均由产品公司自身提供，本人皆从网络获取。获取与共享之行为或有侵犯产品权益的嫌疑。若被告知需停止共享与使用，本人会及时删除此页面与整个项目。请您暸解相关情况，并遵守产品协议。**
 
 ## [ONE v3.5.0 之前版本：API 链接](https://github.com/jokermonn/-Api/blob/master/ONE~v3.5.0.md) ##
 
@@ -38,6 +38,12 @@ app 下载链接：[http://www.wandoujia.com/apps/com.douban.movie](http://www.w
 ![](http://img.wdjimg.com/mms/icon/v1/5/22/05be4e3dc6e4beaf4be0c1249c176225_78_78.png)
 
 app 下载链接：[http://www.wandoujia.com/apps/com.nineton.weatherforecast](http://www.wandoujia.com/apps/com.nineton.weatherforecast)
+
+## [小米天气：API 链接](https://github.com/jokermonn/-Api/blob/master/XiaomiWeather.md) ##
+
+![](http://i1.piimg.com/567571/d9d68c0ad8def11b.png)
+
+app 下载链接（非小米不可安装）：[http://www.cr173.com/soft/264860.html](http://www.cr173.com/soft/264860.html)
 
 ## [魅族天气：API 链接](https://github.com/jokermonn/-Api/blob/master/MeizuWeather.md) ##
 
